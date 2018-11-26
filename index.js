@@ -14,11 +14,13 @@ function destructivelyRemoveFirstDriver(){
   drivers.shift();
 }
 function appendDriver(name){
-  return name = [...drivers, "Broom"];
+  name = [...drivers, "Broom"];
+  return name;
 }
 
 function prependDriver(name){
- return name = ["Arnold", ...drivers];
+  name = ["Arnold", ...drivers];
+  return name;
 }
 function removeLastDriver(){
   return drivers.slice(0, drivers.length - 1);
